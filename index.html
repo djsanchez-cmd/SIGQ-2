@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+        <script src="layers/BOLIVIA_1.js"></script><script src="layers/ORIGENESADUANAS_2.js"></script><script src="layers/CORREDORNORTESUR_4.js"></script><script src="layers/CORREDORSUR_5.js"></script><script src="layers/CORREDOROESTENORTE_6.js"></script><script src="layers/CORREDOROESTESUR_7.js"></script><script src="layers/CORREDORESTEOESTE_8.js"></script><script src="layers/INTTARIJAARICA_9.js"></script><script src="layers/GUAYARAMERINARICA_10.js"></script><script src="layers/INTSUCREARICA_11.js"></script><script src="layers/PTO_SUAREZARICA_12.js"></script><script src="layers/JENNEFERARICA_13.js"></script><script src="layers/SNMATIASARICA_14.js"></script><script src="layers/ZFWINNERARICA_15.js"></script><script src="layers/ZFPTOSUAREZARICA_16.js"></script><script src="layers/ARROYO_CONCEPARICA_17.js"></script><script src="layers/AeroVVIARICA_18.js"></script><script src="layers/INTSCZARICA_19.js"></script><script src="layers/ZFORUROARICA_20.js"></script><script src="layers/PISIGAARICA_21.js"></script><script src="layers/TAMBOQUEMADOARICA_22.js"></script><script src="layers/CHARANAARICA_23.js"></script><script src="layers/INTORUROARICA_24.js"></script><script src="layers/INTPOTOSIARICA_25.js"></script><script src="layers/ZFPATACAMAYAARICA_26.js"></script><script src="layers/AeroELALTOARICA_27.js"></script><script src="layers/INTLPARICA_28.js"></script><script src="layers/ZFELALTOARICA_29.js"></script><script src="layers/INTCBBAARICA_30.js"></script><script src="layers/AeroCBBAARICA_31.js"></script><script src="layers/DESTINOARICA_32.js"></script>
+        <script src="styles/BOLIVIA_1_style.js"></script><script src="styles/ORIGENESADUANAS_2_style.js"></script><script src="styles/ABC_RedVialFundamental2024_3_style.js"></script><script src="styles/CORREDORNORTESUR_4_style.js"></script><script src="styles/CORREDORSUR_5_style.js"></script><script src="styles/CORREDOROESTENORTE_6_style.js"></script><script src="styles/CORREDOROESTESUR_7_style.js"></script><script src="styles/CORREDORESTEOESTE_8_style.js"></script><script src="styles/INTTARIJAARICA_9_style.js"></script><script src="styles/GUAYARAMERINARICA_10_style.js"></script><script src="styles/INTSUCREARICA_11_style.js"></script><script src="styles/PTO_SUAREZARICA_12_style.js"></script><script src="styles/JENNEFERARICA_13_style.js"></script><script src="styles/SNMATIASARICA_14_style.js"></script><script src="styles/ZFWINNERARICA_15_style.js"></script><script src="styles/ZFPTOSUAREZARICA_16_style.js"></script><script src="styles/ARROYO_CONCEPARICA_17_style.js"></script><script src="styles/AeroVVIARICA_18_style.js"></script><script src="styles/INTSCZARICA_19_style.js"></script><script src="styles/ZFORUROARICA_20_style.js"></script><script src="styles/PISIGAARICA_21_style.js"></script><script src="styles/TAMBOQUEMADOARICA_22_style.js"></script><script src="styles/CHARANAARICA_23_style.js"></script><script src="styles/INTORUROARICA_24_style.js"></script><script src="styles/INTPOTOSIARICA_25_style.js"></script><script src="styles/ZFPATACAMAYAARICA_26_style.js"></script><script src="styles/AeroELALTOARICA_27_style.js"></script><script src="styles/INTLPARICA_28_style.js"></script><script src="styles/ZFELALTOARICA_29_style.js"></script><script src="styles/INTCBBAARICA_30_style.js"></script><script src="styles/AeroCBBAARICA_31_style.js"></script><script src="styles/DESTINOARICA_32_style.js"></script><script src="styles/ADUANA_MapadeAdministracionesAduaneras_Bolivia2018_33_style.js"></script><script src="styles/VIASBOLIVIA_MapadeUbicacindeRetenesdePeajeyPesajeenBolivia_2018_34_style.js"></script><script src="styles/surtidores_de_combustible_35_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+        <script src="http://geo.gob.bo/geoserver/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&TYPENAME=geonode:abc_red_vial_fundamental_2024&SRSNAME=EPSG:3857&outputFormat=text%2Fjavascript&format_options=callback%3AgetABC_RedVialFundamental2024_3Json"></script><script src="http://geo.gob.bo/geoserver/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&TYPENAME=geonode:administracion_aduanera_2018&SRSNAME=EPSG:3857&outputFormat=text%2Fjavascript&format_options=callback%3AgetADUANA_MapadeAdministracionesAduaneras_Bolivia2018_33Json"></script><script src="http://geo.gob.bo/geoserver/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&TYPENAME=geonode:vias_bolivia2018&SRSNAME=EPSG:3857&outputFormat=text%2Fjavascript&format_options=callback%3AgetVIASBOLIVIA_MapadeUbicacindeRetenesdePeajeyPesajeenBolivia_2018_34Json"></script><script src="http://geo.gob.bo/geoserver/wfs?SERVICE=WFS&VERSION=1.0.0&REQUEST=GetFeature&TYPENAME=geonode:surtidores_de_combustible&SRSNAME=EPSG:3857&outputFormat=text%2Fjavascript&format_options=callback%3Agetsurtidores_de_combustible_35Json"></script>
+    </body>
+</html>
